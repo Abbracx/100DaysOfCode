@@ -1,40 +1,75 @@
 <!DOCTYPE html>
-<html> 
-<p> view more
-<a href="#">cat photo</a> 
-</p>
+<html>
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
 
-<a href="#">
-<img src="https://bit.ly/fcc-relaxing-cat" alt="brown cute cat">
-</a>
+<style>
+  .red-text {
+    color: red;
+  }
 
+  h2 {
+    font-family: Lobster, monospace;
+  }
 
-  <p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere 
-  stretching attack your ankles chase the red dot, 
+  p {
+    font-size: 16px;
+    font-family: monospace;
+  }
+
+  .smaller-image {
+    width: 100px;
+  }
+
+  .thick-green-border {
+    border-style: solid;
+    border-color: green;
+    border-width: 10px;
+    border-radius: 50%;
+  }
+
+  .silver-background {
+    background-color: silver;
+  }
+
+  #cat-photo-form {
+    background-color: green;
+  }
+</style>
+
+<h2 class="red-text">CatPhotoApp</h2>
+<main>
+  <p class="red-text">Click here to view more <a href="#">cat photos</a>.</p>
+
+  <a href="#"><img class="smaller-image thick-green-border" src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back."></a>
+
+  <p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere
+  stretching attack your ankles chase the red dot,
   hairball run catnip eat the grass sniff.</p>
-  <p>Purr jump eat the grass rip the couch 
-  scratched sunbathe, shed everywhere rip the 
+
+  <p>Purr jump eat the grass rip the couch
+  scratched sunbathe, shed everywhere rip the
   couch sleep in the sink fluffy fur catnip scratched.</p>
-  <p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere 
-  stretching attack your ankles chase the red dot, 
+
+  <p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere
+  stretching attack your ankles chase the red dot,
   hairball run catnip eat the grass sniff.</p>
 
-
+  <div class="silver-background">
     <p>Three things cat love:</p>
-    <ul> 
+    <ul>
         <li>Milk</li>
         <li>Fish</li>
         <li>Cheese</li>
     </ul>
 
     <p>Three things cat hate:</p>
-    <ol> 
+    <ol>
         <li>rat</li>
         <li>dogs</li>
         <li>dirty</li>
     </ol>
-
-<form action="https://freecatphotoapp.com/submit-cat-photo">
+  </div>
+<form action="https://freecatphotoapp.com/submit-cat-photo" id="cat-photo-form">
   <input type="text" placeholder="cat photo URL" required>
     <label for=indoor>
         <input type="radio" id="indoor" name="indoor-outdoor" value="indoor" >indoor
@@ -44,7 +79,7 @@
     </label><br>
 
     <label for=loving>
-        <input type="checkbox" id="one"  name="personality" value="loving">Loving
+        <input type="checkbox" id="loving"  name="personality" value="loving">Loving
     </label>
     <label for=lazy>
         <input type="checkbox" id="lazy" name="personality" value="lazy">Lazy
